@@ -80,13 +80,13 @@ header hr {
 }
 
 
-
 .content input {
     margin-bottom: 10px;
-    width: 90%;
+    width: 40%;
     height: 50px;
     border: solid 2px black;
-
+    display: flex;
+    margin-left: 10px;
 }
 
 .content ::placeholder {
@@ -96,11 +96,29 @@ header hr {
 #submit{
     background-color: #0083fc;
     border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 20%;
+    margin-left:10% ;
+    margin-top: 10px;
+    transition: all 0.5s;
+    
+}
+
+#submit p{
+    margin: 0 auto;
+}
+
+#submit:hover{
+    background-color:#359eff;
+    transform: scale(1.1)
 }
 
 .content textarea {
     border: solid 2px black;
-    width: 90%;
+    width: 40%;
+    margin-left:10px;
 }
 
 
@@ -130,5 +148,18 @@ header hr {
     .content {
         margin-left: 0px;
         padding: 20px;
+    }
+
+    .content input {
+        margin-bottom: 10px;
+        width: 90%;
+        height: 50px;
+        border: solid 2px black;
+    
+    }
+    .content textarea {
+        border: solid 2px black;
+        width: 90%;
+        margin-left: 0px;
     }
 }

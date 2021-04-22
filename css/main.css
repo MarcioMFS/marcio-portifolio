@@ -135,7 +135,7 @@ header hr {
 }
 
 
-@media(max-width: 780px){
+@media(max-width: 1185px){
     .content {
         display: flex;
         flex-direction: column;
