@@ -1,0 +1,134 @@
+.site{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.topo img {
+    width: 200px;
+    position: relative;
+    top: -30px;
+    left: 10px;
+    transition: transform 0.2s;
+}
+
+.topo img:hover {
+    transform: scale(1.1)
+}
+
+.topo{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.menu ul{
+    top: -30px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu li a{
+    margin-left: 10px;
+    text-decoration: none;
+    color:black;
+    position: relative;
+    font-size: 20pt
+    
+}
+
+
+
+.menu li a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0);
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  
+.menu li a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+
+  
+
+header hr {
+    position: relative;
+    top: -95px;
+    border: 1px solid black;
+    width: 80%;
+    margin-left: 0;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.underline:hover{
+    text-decoration: none;
+}
+
+
+
+.content input {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 50px;
+    border: solid 2px black;
+
+}
+
+.content ::placeholder {
+    font-size: 20px;
+  }
+
+#submit{
+    background-color: #0083fc;
+    border: none;
+}
+
+.content textarea {
+    border: solid 2px black;
+    width: 90%;
+}
+
+
+@media(max-width: 780px){
+    .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .caixa1{
+        align-items: center;
+    }
+
+    .topo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header hr {
+        position: static;
+        border: 1px solid black;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content {
+        margin-left: 0px;
+        padding: 20px;
+    }
+}
